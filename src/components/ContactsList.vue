@@ -8,8 +8,8 @@
          <th>Email</th>
        </thead>
        <tbody>
-         <tr v-for="(user, key) in users" :key="key">
-          <td>{{user.firstName}}</td>
+         <tr v-for="(user, key) in users" :key="key" v-if="user.firstName === 'Sofronije'">
+           <td>{{user.firstName}}</td>
            <td>{{user.lastName}}</td>
            <td>{{user.email}}</td>
          </tr>
