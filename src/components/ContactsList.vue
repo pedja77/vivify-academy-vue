@@ -52,7 +52,7 @@ export default {
       this.newUser = {} // nova referenca na objekat newUser, ispraznimo inpute
     },
     deleteUser(index) {
-      this.users.splice(index, 1);
+      this.users.splice(index, 1); // moze i sam user umesto indexa, indexOf(user)
     }
  }
 }
